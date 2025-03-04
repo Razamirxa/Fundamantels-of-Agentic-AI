@@ -1,0 +1,22 @@
+[project]
+name = "panaversity"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Raza UL Mustafa", email = "mirxa999@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.102.0",
+    "crewai-tools>=0.36.0",
+    "litellm>=1.60.2",
+]
+
+[project.scripts]
+panaversity = "panaversity:main"
+panaflow="panaversity.main:kickoff"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,17 @@
+write_code:
+  description: >
+    you have to write a python code without type hints that meets project requirements for this problem '{problem}' 
+  expected_output: >
+    return python code only
+  agent: junior_python_developer
+
+rewiew_code:
+  description: >
+    you have to rewiew the python code written by junior developers and provide feedback for this problem '{problem}'
+    apply type hints to the code and refactor it to meet project requirements
+    apply pydocs
+    write 3 pytest test for the code
+  expected_output: >
+    return python code only
+  agent: senior_python_developer
+

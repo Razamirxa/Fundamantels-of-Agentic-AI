@@ -1,0 +1,27 @@
+[project]
+name = "class10"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Raza UL Mustafa", email = "mirxa999@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.102.0",
+    "litellm>=1.60.2",
+]
+
+[project.scripts]
+class10 = "class10:main"
+Simpleflow ="class10.main:kickoff"
+chain_prompt ="class10.main1:kickoff"
+route_run ="class10.main2:kickoff"
+route_plot ="class10.main2:plot"
+router_run ="class10.main3:kickoff"
+router_plot ="class10.main3:plot"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
